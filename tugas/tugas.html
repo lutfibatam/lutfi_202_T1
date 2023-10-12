@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TUGAS PEMOGRAMAN WEB</title>
+        <style>
+            body{
+                font-size: medium;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                font-weight: 200;
+                font-style: normal;
+                text-shadow: 5px; 
+            }
+            h1{
+                color:rgb(20, 7, 7);
+            }
+            header > h1 {
+                margin-bottom: 1; 
+            }
+            header > h2 {
+                margin-bottom: auto;
+            }
+            header {
+                background-color:aqua;
+                color:rgb(235, 166, 82); 
+                padding: 12px;  
+            }
+            #mybutton{
+                background-color:blanchedalmond;
+                color:brown;
+                padding: 5px 10px;
+                height: auto;
+                border: 1px Auto;
+                border-radius: 5px;
+                line-height: 2.0;
+            }
+            nav li {
+                display: inline;
+                margin-right: 10px;
+                border-bottom: 1px solid black; 
+            } 
+            .crumb a::after {
+                display: inline-block;
+                color: #000;
+                content: '>';
+                font-size: 80%;
+                font-weight: bold;
+                padding: 0 3px;
+            } 
+            label {
+                display: block, flex;
+                font: 1rem 'Fira Sans', sans-serif; 
+            }
+            .preference {
+                justify-content: space-between;
+                width: 60%;
+                margin: 0.5rem;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+            }
+            .news {
+                background-color: bisque;
+                padding: 1em;
+                border: solid thin black;
+            }
+            main {
+                flex: 2;
+            }
+            menu {
+                list-style-type: none;
+                display: flex;
+                padding: 0;
+                margin-bottom: 0;
+            }
+            .sidebar {
+                flex: 1;
+                background-color:blanchedalmond;
+                padding: 10px;
+            }
+            footer {
+                background-color: #333;
+                color:antiquewhite; 
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Selamat Datang di website saya</h1>
+        <p>Di web ini saya akan mengimplementasikan pelajaran pemograman web selama beberapa pekan terakhir dan semoga bisa sesuai harapan</p>
+   
+        <header>
+            <h2>Situs Web Saya</h2>
+            <nav>
+                <ul>
+                    <li><a href="/">Beranda</a></li>
+                    <li><a href="/tentang">Tentang Kami</a></li>
+                    <li><a href="/layanan">Layanan</a></li>
+                    <li><a href="/kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <button id="myButton">Klik Saya</button>  
+
+        <div class="container">
+            <main> 
+                <menu>
+                    <li><button id="save">Save for later</button></li>
+                    <li><button id="share">Share this news</button></li>
+                  </menu>
+            </main>
+            <aside class="sidebar">
+                <h3>Berita Terbaru</h3>
+                <ul>
+                    <li><a href="/berita/1">Sistem Cerdas</a></li>
+                    <li><a href="/berita/2">Multimedia</a></li>
+                    <li><a href="/berita/3">Teknologi Informasi</a></li>
+                </ul>
+            </aside> 
+        </div>>  
+
+        <script src="javascript.js"> 
+            var button = document.getElementById("myButton");
+            
+            button.addEventListener("click", function() {
+                var demo = document.getElementById("demo");
+                demo.innerHTML = "Tombol telah diklik!";
+            });
+        </script> 
+    </body> 
+</html> 
